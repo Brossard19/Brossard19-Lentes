@@ -69,6 +69,7 @@ img{
 
 .main{
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 /* Diseño del slider */
@@ -158,7 +159,7 @@ img{
     z-index: 999;
 }
 
-.slider_link{
+.btn_shop{
     display: block;
     border: 2px solid #FF4E00;
     color: white;
@@ -214,4 +215,98 @@ img{
 .product_icon{
     display: block;
     margin-top: 10px;
+}
+
+/* Slider #2 */
+
+.container_testimonials{
+    text-align: center;
+    background: #f7f7f7;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.testimonial_txt{
+    color: #333;
+}
+
+/* Imagenes y animacion */
+
+.container-editor{
+    margin-top: 20px;
+}
+
+.editor_item{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.editor_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.editor_circle{
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -200px;
+    right: -200px;
+    color: white;
+    padding: 20px;
+    padding-bottom: 70px; 
+    padding-right: 50px;
+    font-size: 0.9em;
+    text-align: center;
+ 
+    transition: all 0.5s;
+}
+
+.editor_item:hover .editor_circle{
+    transform: scale(1.2);
+    bottom: -90px;
+    right: -50px;
+
+}
+
+.editor_item:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 4, 4, 0.700);
+    opacity: 0;
+    transition: all 0.5s;    
+}
+
+.editor_item:hover:before{
+    opacity: 1;
+}
+
+/* Tips  */
+
+.container_tips{
+    padding: 20px;
+    margin: 20px 0;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.tip i{
+    font-size: 2em;
+    color: #333;
+    padding: 20px 0;
+}
+
+.tip .btn_shop{
+    color: #333;
 }
