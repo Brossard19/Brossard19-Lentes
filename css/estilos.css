@@ -22,7 +22,7 @@ img{
     width: 100%;
 }
 
-/* Diseño del header */
+/* Design Header */
 
 .main-header .container{
     padding: 0 20px;
@@ -72,23 +72,23 @@ img{
     margin-bottom: 20px;
 }
 
-/* Diseño del slider */
+/* Slider Hero*/
 
-.container-slider{
+.container-sliderHero{
     margin: 50px 0;
     position: relative;
     overflow: hidden;
 }
 
-.slider{
+.sliderHero{
     display: flex;
-    width: 500%;
+    width: 400%;
     height: 225px;
     margin-left: -100%;
     position: relative;
 }
 
-.slider:before{
+.sliderHero:before{
     content: "";
     top: 0;
     left: 0;
@@ -99,19 +99,19 @@ img{
     height: 100%;
 }
 
-.slider_section{
+.sliderHero_section{
     width: 100%;
     position: relative;
 }
 
-.slider_img{
+.sliderHero_img{
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.slider_btn{
+.sliderHero_btn{
     position: absolute;
     width: 40px;
     height: 40px;
@@ -127,28 +127,28 @@ img{
     z-index: 999;
 }
 
-.slider_btn:hover{
+.sliderHero_btn:hover{
     background: #fff;
 }
 
-.slider_btn-right{
+.sliderHero_btn-right{
     right: 10px;
 }
 
-.slider_btn-left{
+.sliderHero_btn-left{
     left: 10px;
 }
 
-.slider_title{
+.sliderHero_title{
     font-size: 2.3em;
     margin: 0;
 }
 
-.slider_txt{
+.sliderHero_txt{
     margin: 5px 0;
 }
 
-.slider_content{
+.sliderHero_content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -170,7 +170,11 @@ img{
     margin: 20px auto;
 }
 
-/* Estilos al producto */
+.btn_shop:hover{
+    background: #ff4d00f1;
+}
+
+/* Style Product: grid*/
 
 .container-productos{
     display: grid;
@@ -197,7 +201,7 @@ img{
     color: white;
 }
 
-/* height 120px objet fit- cover */
+/* Height 120px objet fit- cover */
 
 .product_img{
     width: 100%;
@@ -217,20 +221,86 @@ img{
     margin-top: 10px;
 }
 
-/* Slider #2 */
+/* Slider Side */
 
-.container_testimonials{
+.container_sliderSide{
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
     text-align: center;
     background: #f7f7f7;
     padding: 20px;
     margin: 20px 0;
 }
 
-.testimonial_txt{
-    color: #333;
+.sliderSide{
+    display: flex;
+    width: 400%;
+    height: 225px;
+    margin-left: -100%;
+    position: relative;
 }
 
-/* Imagenes y animacion */
+.sliderSide_section{
+    width: 100%;
+    position: relative;
+}
+
+.sliderSide_btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.sliderSide_btn:hover{
+    background: #fff;
+}
+
+.sliderSide_btn-right{
+    right: 10px;
+}
+
+.sliderSide_btn-left{
+    left: 10px;
+}
+
+.sliderSide_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #333;
+    transform: translate(-50%, -50%);
+    width: 85%;
+}
+
+.sliderSide_title{
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.sliderSide_txt{
+    margin: 5px 0;
+}
+
+.sliderSide_txt_colorwhite{
+    color: #45454654;
+}
+
+.sliderSide_txt_color{
+    font-size: 0.9em;
+    color: #FF4E00;
+}
+/* Section Img */
 
 .container-editor{
     margin-top: 20px;
@@ -309,4 +379,9 @@ img{
 
 .tip .btn_shop{
     color: #333;
+}
+
+.tip .btn_shop:hover{
+    color: white;
+    background:#ff4d00f1;
 }

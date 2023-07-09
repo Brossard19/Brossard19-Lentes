@@ -1,43 +1,84 @@
-const slider = document.querySelector("#slider");
-let sliderSection = document.querySelectorAll(".slider_section");
-let sliderSectionLast = sliderSection[sliderSection.length - 1];
+const sliderHero = document.querySelector("#sliderHero");
+let sliderSectionHero = document.querySelectorAll(".sliderHero_section");
+let sliderSectionLastHero = sliderSectionHero[sliderSectionHero.length - 1];
 
-const btnLeft = document.querySelector("#btn-left");
-const btnRight = document.querySelector("#btn-right");
+const btnLeftHero = document.querySelector("#btnHero-left");
+const btnRightHero = document.querySelector("#btnHero-right");
 
-slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+sliderHero.insertAdjacentElement('afterbegin', sliderSectionLastHero);
 
-function Next() {
-    let sliderSectionFirst = document.querySelectorAll(".slider_section")[0];
-    slider.style.marginLeft = "-200%"; 
-    slider.style.transition = "all 1s";
+function NextHero() {
+    let sliderSectionFirstHero = document.querySelectorAll(".sliderHero_section")[0];
+    sliderHero.style.marginLeft = "-200%"; 
+    sliderHero.style.transition = "all 1s";
     setTimeout(function() {
-        slider.style.transition = "none"
-        slider.insertAdjacentElement('beforeend',sliderSectionFirst);
-        slider.style.marginLeft = "-100%";
-    }, 500);
+        sliderHero.style.transition = "none"
+        sliderHero.insertAdjacentElement('beforeend',sliderSectionFirstHero);
+        sliderHero.style.marginLeft = "-100%";
+    }, 1000);
 }
 
-function Prev() {
-    let sliderSection = document.querySelectorAll(".slider_section");
-    let sliderSectionLast = sliderSection[sliderSection.length - 1];
-    slider.style.marginLeft = "0"
-    slider.style.transition = "all 1s";
+function PrevHero() {
+    let sliderSectionHero = document.querySelectorAll(".sliderHero_section");
+    let sliderSectionLastHero = sliderSectionHero[sliderSectionHero.length - 1];
+    sliderHero.style.marginLeft = "0"
+    sliderHero.style.transition = "all 1s";
     setTimeout(function() {
-        slider.style.transition = "none"
-        slider.insertAdjacentElement('afterbegin',sliderSectionLast);
-        slider.style.marginLeft = "-100%";
-    }, 500);
+        sliderHero.style.transition = "none"
+        sliderHero.insertAdjacentElement('afterbegin',sliderSectionLastHero);
+        sliderHero.style.marginLeft = "-100%";
+    }, 1000);
 }
 
-btnRight.addEventListener('click',function(){
-    Next();
+btnRightHero.addEventListener('click',function(){
+    NextHero();
 });
 
-btnLeft.addEventListener('click',function(){
-    Prev();
+btnLeftHero.addEventListener('click',function(){
+    PrevHero();
 });
 
 setInterval(function(){
-    Next();
+    NextHero();
 }, 5000);
+
+
+const sliderSide = document.querySelector("#sliderSide");
+let sliderSectionSide = document.querySelectorAll(".sliderSide_section");
+let sliderSectionLastSide = sliderSectionSide[sliderSectionSide.length - 1];
+
+const btnLeftSide = document.querySelector("#btnSide-left");
+const btnRightSide = document.querySelector("#btnSide-right");
+
+sliderSide.insertAdjacentElement('afterbegin', sliderSectionLastSide);
+
+function NextSide() {
+    let sliderSectionFirstSide = document.querySelectorAll(".sliderSide_section")[0];
+    sliderSide.style.marginLeft = "-200%"; 
+    sliderSide.style.transition = "all 1s";
+    setTimeout(function() {
+        sliderSide.style.transition = "none"
+        sliderSide.insertAdjacentElement('beforeend',sliderSectionFirstSide);
+        sliderSide.style.marginLeft = "-100%";
+    }, 1000);
+}
+
+function PrevSide() {
+    let sliderSectionSide = document.querySelectorAll(".sliderSide_section");
+    let sliderSectionLastSide = sliderSectionSide[sliderSectionSide.length - 1];
+    sliderSide.style.marginLeft = "0"
+    sliderSide.style.transition = "all 1s";
+    setTimeout(function() {
+        sliderSide.style.transition = "none"
+        sliderSide.insertAdjacentElement('afterbegin',sliderSectionLastSide);
+        sliderSide.style.marginLeft = "-100%";
+    }, 1000);
+}
+
+btnRightSide.addEventListener('click',function(){
+    NextSide();
+});
+
+btnLeftSide.addEventListener('click',function(){
+    PrevSide();
+});
