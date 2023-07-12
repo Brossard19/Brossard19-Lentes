@@ -221,6 +221,52 @@ img{
     margin-top: 10px;
 }
 
+/* CountDown */
+
+.countdown{
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    background-image: url(../img/banner-mid.jpg);
+    background-size: cover;
+}
+
+.countdown_container{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 10px;
+}
+
+.countdown_title{
+    letter-spacing: .150rem;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.countdown_txt{
+font-size: 40px;
+}
+
+.countdown_lists{
+    padding: 0 2px;
+    text-align: center;
+}
+
+.countdown_txt_txt{
+    display: block;
+    font-size: 13px;
+}
+
+.emoji{
+    display: none;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
 /* Slider Side */
 
 .container_sliderSide{
