@@ -40,12 +40,6 @@ img{
     display: none;
 }
 
-/* .main-header_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
 .main-header_container{
     display: flex;
     justify-content: space-around;
@@ -62,7 +56,7 @@ img{
 
 .main-header_btn{
     display: flex;
-    padding: 8px 15px;
+    padding: 7px 15px;
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
@@ -71,165 +65,13 @@ img{
 .main-header_input{
     display: block;
     padding: 8px;
+    border: 1px solid #454546;
 }
 
 .main{
     padding: 0 20px;
-    margin-bottom: 20px;
 }
 
-/* Switch - Modo oscuro */
-
-.switch{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;        
-    justify-content: space-between;
-    width: 60px;
-    height: 30px;
-    margin: 20px 0;
-    padding: 0 5px;
-    position: relative;
-    border-radius: 100px;
-    border: 2px solid #333 ;
-    background-color: #333;
-}
-
-.switch i{
-    font-size: 1rem;
-    color: #FF4E00;
-}
-
-.main-header_container span:last-child:before{
-    content: "";
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: #333 solid thin;
-    left: 0;
-    right: unset;
-}
-
-.main-header_container span:last-child.active:before{
-    right: 0;
-    left: unset;
-    border:#FF4E00 solid 1px;
-}
-
-.main-header_container span:last-child.active i:first-child{
-    color: #fff;
-}
-
-.main-header_container span:last-child.active{
-    background-color: #FF4E00;
-    border: 2px solid #fff;
-}
-
-/* Dark mode */
-
-body.active header{
-    background-color: #19191a;
-}
-
-body.active header .main-header_title{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active header .icon-menu{
-    border: 1px solid rgb(255, 255, 255, 1.00);
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active header .main-header_btn{
-    color: rgb(255, 255, 255, 1.00);
-    border: 1px solid #ccc;
-}
-
-body.active header .bi-person-fill{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active header .bi-search{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active header .main-header_input{
-    background-color: #19191a;
-    color: rgb(255, 255, 255, 1.00);
-    border: 1px solid rgb(255, 255, 255, 1.00);
-}
-
-body.active main{
-    background-color: #19191a;
-}
-
-body.active main .main-title{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .product_description{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .bi-cart-plus-fill{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .product::before{
-    background-color: rgb(255, 255, 255, 1.00);
-    color: #FF4E00;
-    font-weight: bold;
-}
-
-body.active main .container_tips{
-    background-color: #202020;
-}
-
-body.active main .bi-gear{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .tip i{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .tip h3{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .tip p{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .tip a{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .container_sliderSide{
-    background-color: #202020;
-}
-
-body.active main .sliderSide_content h2{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .sliderSide_content h3{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .sliderSide_content p{
-    color: rgb(255, 255, 255, 1.00);
-}
-
-body.active main .sliderSide_txt_colorwhite{
-    color: #454546  ;
-}
-
-body.active main .sliderSide_txt_color{
-    color: #FF4E00;
-}
 /* Slider Hero*/
 
 .container-sliderHero{
@@ -389,7 +231,12 @@ body.active main .sliderSide_txt_color{
     padding: 20px;
     margin: 20px 0;
     color: white;
-    background-image: url(../img/banner-mid.jpg);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/countdown1.jpg);
     background-size: cover;
 }
 
@@ -402,7 +249,7 @@ body.active main .sliderSide_txt_color{
 .countdown_title{
     letter-spacing: .150rem;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 .countdown_txt{
@@ -593,3 +440,215 @@ body.active main .sliderSide_txt_color{
     color: white;
     background:#ff4d00f1;
 }
+
+/* Inicio Footer */
+
+.main-footer{
+    background-color: #19191a;
+    color: rgb(255, 255, 255, 1.00);
+    padding: 20px 20px 2px;
+}
+
+.footer_txt{
+    color: #555;
+}
+
+.footer_link{
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.footer_input{
+    background-color: #19191a;
+    width: 100%;
+    display: block;
+    padding: 7.5px;
+}
+
+.footer_input{
+    background-color: #19191a;
+    color: rgb(255, 255, 255, 1.00);
+    border: 1px solid #555;
+}
+
+.footer_title{
+    margin-top: 0;
+}
+
+.copy{
+    font-size: 15px;
+    text-align: center;
+    color: #555;
+}
+/* Fin del Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Switch - Modo oscuro */
+
+.switch{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;        
+    justify-content: space-between;
+    width: 60px;
+    height: 30px;
+    margin: 20px 0;
+    padding: 0 5px;
+    position: relative;
+    border-radius: 100px;
+    border: 2px solid #333 ;
+    background-color: #333;
+}
+
+.switch i{
+    font-size: 1rem;
+    color: #FF4E00;
+}
+
+.main-header_container span:last-child:before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: #333 solid thin;
+    left: 0;
+    right: unset;
+}
+
+.main-header_container span:last-child.active:before{
+    right: 0;
+    left: unset;
+    border:#FF4E00 solid 1px;
+}
+
+.main-header_container span:last-child.active i:first-child{
+    color: #fff;
+}
+
+.main-header_container span:last-child.active{
+    background-color: #FF4E00;
+    border: 2px solid #fff;
+}
+
+/* Dark mode */
+
+body.active header{
+    background-color: #19191a;
+}
+
+body.active header .main-header_title{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active header .icon-menu{
+    border: 1px solid #555;
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active header .main-header_btn{
+    color: rgb(255, 255, 255, 1.00);
+    border: 1px solid #555;
+}
+
+body.active header .bi-person-fill{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active header .bi-search{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active header .main-header_input{
+    background-color: #19191a;
+    color: rgb(255, 255, 255, 1.00);
+    border: 1px solid #555;
+}
+
+body.active main{
+    background-color: #19191a;
+    
+}
+
+body.active main .main-title{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .product_description{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .bi-cart-plus-fill{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .product::before{
+    background-color: rgb(255, 255, 255, 1.00);
+    color: #FF4E00;
+    font-weight: bold;
+}
+
+body.active main .container_tips{
+    margin-bottom: 0;
+    background-color: #202020;
+}
+
+body.active main .bi-gear{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .tip i{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .tip h3{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .tip p{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .tip a{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .container_sliderSide{
+    background-color: #202020;
+}
+
+body.active main .sliderSide_content h2{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .sliderSide_content h3{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .sliderSide_content p{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .sliderSide_txt_colorwhite{
+    color: #454546  ;
+}
+
+body.active main .sliderSide_txt_color{
+    color: #FF4E00;
+}
+
+ 
+/* Fin Switch - Modo oscuro */
