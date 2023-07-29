@@ -34,6 +34,8 @@ img{
     margin: 10px 0 5px;
     color: #454546;
     font-family: "Poppins";
+    text-transform: uppercase;
+    text-shadow: -1px 1px 3px #363232a4;
 }
 
 .main-nav{
@@ -48,10 +50,26 @@ img{
 
 .icon-menu{
     font-size: 1.5em;
-    border: 1px solid #454546;
+    border: 1px solid #454546ed;
     display: flex;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+.bi-list{
+    color: #454546;
+}
+
+.bi-person-fill{
+    color: #454546;
+}
+
+.bi-cart-fill{
+    color: #454546;
+}
+
+.bi-search{
+    color: #454546;
 }
 
 .main-header_btn{
@@ -215,6 +233,13 @@ img{
     color: white;
 }
 
+.bi-cart-plus-fill{
+    color: #19191a;
+}
+
+.bi-cart-plus-fill:hover{
+    color:#FF4E00;
+}
 /* Height 120px objet fit- cover */
 
 .product_img{
@@ -222,10 +247,13 @@ img{
 }
 
 .product_title{
+    font-size: 16px;
+    color: #555;
     text-align: center;
 }
 
 .product_price{
+    font-size: 18px;
     color: #FF4E00;
     font-weight: bold;
 }
@@ -236,6 +264,7 @@ img{
 }
 
 .main-title{
+    color: #353434;
     margin-top: 0;
     padding-top: 20px;
 }
@@ -463,12 +492,77 @@ img{
     transition: 0.5s;
 }
 
+/* Inicio de Notes */
+
+.container_notes{
+    padding: 20px;
+    margin: 20px 0;
+    background: #f7f7f7;
+}
+
+.note{
+    display: flex;
+    align-items: center;
+}
+
+.note_icon{
+    padding: 20px;
+    color: #333;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.note_icon:hover{
+    color: #FF4E00;
+}
+
+.note_content {
+    padding-left: 20px;
+}
+
+.note_title{
+    margin-bottom: 4.5px;
+    font-size: 15px;
+    color: #FF4E00;
+}
+
+.note_txt{
+    margin-top: 6px;
+    font-size: 16px;
+}
+/* Fin de Notes */
+
 /* Inicio Footer */
 
 .main-footer{
-    background-color: #19191a;
-    color: rgb(255, 255, 255, 1.00);
+    background: #19191a;
+    color: #ffffff;
     padding: 20px 20px 2px;
+}
+
+.footer_title{
+    border-bottom: 1px dotted #555;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.footer_subtitle{
+    color: #FF4E00;
+}
+
+.footer_title_header{
+    margin-top: 0;
+}
+
+.footer_icon{
+    display: flex;
+    padding: 0;
+}
+
+.footer_icon_social{
+    color: #555;
+    font-size: 15px;
+    padding: 10px 10px 0px;
 }
 
 .footer_txt{
@@ -483,26 +577,23 @@ img{
 }
 
 .footer_input{
-    background-color: #19191a;
+    background: #19191a;
     width: 100%;
     display: block;
-    padding: 7.5px;
-}
-
-.footer_input{
-    background-color: #19191a;
+    padding: 10px;
     color: rgb(255, 255, 255, 1.00);
     border: 1px solid #555;
-}
-
-.footer_title{
-    margin-top: 0;
 }
 
 .copy{
     font-size: 15px;
     text-align: center;
     color: #555;
+}
+
+.copy_admin{
+    font-weight: bold;
+    color: #FF4E00;
 }
 /* Fin del Footer */
 
@@ -521,7 +612,7 @@ img{
     text-align: center;
     font-size: 30px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
-    z-index: 100;
+    z-index: 1000;
 }
 
 .btn_whatsApp:hover{
@@ -597,6 +688,8 @@ body.active header{
 }
 
 body.active header .main-header_title{
+    text-transform: uppercase;
+    text-shadow: -1px 1px 3px #b7b7b790;
     color: rgb(255, 255, 255, 1.00);
 }
 
@@ -606,16 +699,20 @@ body.active header .icon-menu{
 }
 
 body.active header .main-header_btn{
-    color: rgb(255, 255, 255, 1.00);
-    border: 1px solid #555;
+    color: #b7b7b7;
+    border: 1px solid #b7b7b7;
 }
 
 body.active header .bi-person-fill{
-    color: rgb(255, 255, 255, 1.00);
+    color: #b7b7b7;
+}
+
+body.active header .bi-cart-fill{
+    color: #b7b7b7;
 }
 
 body.active header .bi-search{
-    color: rgb(255, 255, 255, 1.00);
+    color: #b7b7b7;
 }
 
 body.active header .main-header_input{
@@ -639,6 +736,10 @@ body.active main .product_description{
 
 body.active main .bi-cart-plus-fill{
     color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .product_title{
+    color: #ffffff;
 }
 
 body.active main .product::before{
@@ -672,6 +773,21 @@ body.active main .tip a{
     color: rgb(255, 255, 255, 1.00);
 }
 
+body.active main .container_notes{
+    background: #202020;
+    margin-bottom: 0;
+}
+
+body.active main .note_txt{
+    color: rgb(255, 255, 255, 1.00);
+}
+
+body.active main .note_icon{
+    color: rgb(255, 255, 255, 1.00);
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 0px #ccc;
+}
+
 body.active main .container_sliderSide{
     background-color: #202020;
 }
@@ -696,5 +812,12 @@ body.active main .sliderSide_txt_color{
     color: #FF4E00;
 }
 
- 
 /* Fin Switch - Modo oscuro */
+
+
+
+/* Inicio Dieño para Tablet */
+
+
+
+/* Fin Diseño para Tablet */
