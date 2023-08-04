@@ -19,12 +19,14 @@
           //do something later when date is reached
           if (distance < 0) {
             let headline = document.getElementById("headline"),
-                countdown = document.getElementById("countdown_hero"),
+                countdownJA = document.getElementById("countdown_hero"),
                 content = document.getElementById("content");
+                countdown = document.getElementById("countdown"),
   
             headline.style.display = "none";
-            countdown.style.display = "none";
+            countdownJA.style.display = "none";
             content.style.display = "block";
+            countdown.style.display = "none"
   
             clearInterval(x);
           }
